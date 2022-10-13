@@ -1,0 +1,10 @@
+.singleDog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px 0;
+  padding: 5px;
+  width: 24%;
+  margin-left: 38%;
+}

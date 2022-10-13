@@ -1,0 +1,17 @@
+.dogs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  box-shadow: 0 2px 4px 0;
+  margin: 5px;
+  padding: 3px;
+}

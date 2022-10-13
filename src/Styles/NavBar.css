@@ -1,0 +1,19 @@
+.Nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(186, 186, 186);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.form {
+  padding: 5px;
+}
