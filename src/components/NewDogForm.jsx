@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createPuppy } from "../ajaxHelpers";
+import "../Styles/CreateDogForm.css";
 
 export default function NewDogForm() {
   const navigate = useNavigate();
@@ -11,16 +12,17 @@ export default function NewDogForm() {
   return (
     <div className="container">
       <form
-        className="pure-form pure-form-stacked"
+        className="form"
         onSubmit={async (e) => {
           e.preventDefault();
           const result = await createPuppy(name, breed);
           navigate("/");
         }}
       >
-        <h3>Create a New Dog</h3>
+        <h3 className="title">Create a New Dog</h3>
         <label>Name:</label>
         <input
+          className="input"
           value={name}
           type="text"
           placeholder="name"
@@ -30,6 +32,7 @@ export default function NewDogForm() {
         />
         <label>Breed:</label>
         <input
+          className="input"
           value={breed}
           onChange={(e) => {
             setBreed(e.target.value);

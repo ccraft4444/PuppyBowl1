@@ -25,9 +25,10 @@ function Dogs() {
           <div className="dogCard" key={dog.id}>
             <h3>{dog.name}</h3>
             <label>Breed:</label>
-            <h4>{dog.breed}</h4>
+            <h4 className="breed">{dog.breed}</h4>
             <img src={dog.imageUrl} />
             <button
+              className="seeDetails"
               onClick={() => {
                 navigate(`/dogs/${dog.id}`);
               }}
